@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def yumetype():
+    return render_template('hello.html', qr_code_url='/static/qrcode.png')
 
 @app.route('/terms-of-use')
 def terms_of_use():
