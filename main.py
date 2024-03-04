@@ -10,6 +10,12 @@ def yumetype():
 def terms_of_use():
     return 'Terms of Use'
 
+@app.route('/oss')
+def oss():
+    return '''
+    Mozc - a Japanese Input Method Editor designed for multi-platform
+    '''
+
 @app.route('/privacy-policy')
 def privacy_policy():
     return '''
